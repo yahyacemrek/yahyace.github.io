@@ -2,54 +2,67 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İlgi Alanlarım - Yahya</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>İlgi Alanlarım</h2>
-    <p>Teknoloji ve akademik ilgi alanlarım</p>
+    <div class="container">
+        
+        <header class="header">
+            <h1>CSS Temel Ödevi</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="about.html">Hakkımda</a></li>
+                    <li><a href="interests.html" class="active">İlgi Alanlarım</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="interests.html">İlgi Alanlarım</a></li>
-            <li><a href="contact.html">İletişim</a></li>
-        </ul>
-    </nav>
+        <main class="main-content">
+            <p class="intro-text">Teknoloji ve akademik ilgi alanlarım.</p>
+            
+            <section class="box content-box" style="width: 100%;">
+                <h3>Teknoloji Alanındaki İlgi Alanlarım</h3>
+                <ul>
+                    <li>Siber Güvenlik (Penetrasyon Testleri, Kali Linux)</li>
+                    <li>Bilgisayar Ağları (Cisco Yönlendirme, OSPF)</li>
+                    <li>İşletim Sistemleri ve I/O Zamanlama</li>
+                    <li>Programlama Dilleri
+                        <ul>
+                            <li>C ve Java</li>
+                            <li>Python</li>
+                        </ul>
+                    </li>
+                </ul>
 
-    <h3>Teknoloji Alanındaki İlgi Alanlarım</h3>
-    <ul>
-        <li>Siber Güvenlik (Penetrasyon Testleri, Kali Linux)</li>
-        <li>Bilgisayar Ağları (Cisco Yönlendirme, OSPF)</li>
-        <li>İşletim Sistemleri ve I/O Zamanlama</li>
-        <li>Programlama Dilleri
-            <ul>
-                <li>C ve Java</li>
-                <li>Python</li>
-            </ul>
-        </li>
-    </ul>
+                <h3>Günlük Çalışma Rutinim</h3>
+                <ol>
+                    <li>Ders materyallerini gözden geçirmek</li>
+                    <li>Ağ topolojileri üzerinde pratik yapmak</li>
+                    <li>Siber güvenlik etkinlikleri ve konferansları araştırmak</li>
+                    <li>Kodlama projeleri geliştirmek</li>
+                </ol>
 
-    <h3>Günlük Çalışma Rutinim</h3>
-    <ol>
-        <li>Ders materyallerini gözden geçirmek</li>
-        <li>Ağ topolojileri üzerinde pratik yapmak</li>
-        <li>Siber güvenlik etkinlikleri ve konferansları araştırmak</li>
-        <li>Kodlama projeleri geliştirmek</li>
-    </ol>
+                <h3>Kavram Sözlüğü</h3>
+                <dl>
+                    <dt>OSPF</dt>
+                    <dd>Ağ yönlendirme protokollerinden biri olup, en kısa yolu bulmak için kullanılır.</dd>
+                    <dt>Burp Suite</dt>
+                    <dd>Web uygulaması güvenliği testi için kullanılan grafiksel bir araçtır.</dd>
+                </dl>
 
-    <h3>Kavram Sözlüğü</h3>
-    <dl>
-        <dt>OSPF</dt>
-        <dd>Ağ yönlendirme protokollerinden biri olup, en kısa yolu bulmak için kullanılır.</dd>
-        <dt>Burp Suite</dt>
-        <dd>Web uygulaması güvenliği testi için kullanılan grafiksel bir araçtır.</dd>
-    </dl>
+                <hr>
+                <p><a href="index.html">← Ana sayfaya geri dön</a></p>
+            </section>
+        </main>
 
-    <p><a href="index.html">← Ana sayfaya geri dön</a></p>
-    <hr>
-    <footer>
-        <p>&copy; 2026 Yahya | Web Programlama Dersi</p>
-    </footer>
+        <footer class="footer">
+            <p>&copy; 2026 Yahya | Web Programlama Dersi</p>
+        </footer>
+
+    </div>
 </body>
 </html>
