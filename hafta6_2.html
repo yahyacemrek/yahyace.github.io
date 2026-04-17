@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birim Dönüştürücü</title>
+    <link rel="stylesheet" href="hafta6_2.css">
+</head>
+<body>
+    <header>
+        <!-- Not: index.html mevcut ana sayfanızı temsil eder -->
+        <a href="index.html" class="back-link">⬅ Ana Sayfaya Dön</a>
+    </header>
+
+    <div class="card">
+        <h2>Birim Dönüştürücü</h2>
+        
+        <label for="degerInput">Değer Giriniz:</label>
+        <input type="number" id="degerInput" value="50">
+        
+        <label for="donusumTipi">Dönüşüm Tipi:</label>
+        <select id="donusumTipi">
+            <option value="c_f">Celsius -> Fahrenheit</option>
+            <option value="m_km">Metre -> Kilometre</option>
+            <option value="kg_g">Kilogram -> Gram</option>
+        </select>
+        
+        <button onclick="donustur()">Hesapla</button>
+        
+        <div class="result-box" id="sonucEkrani">
+            Sonuç: <span id="sonucDegeri">122</span>
+        </div>
+    </div>
+
+    <script src="hafta6_2.js"></script>
+</body>
+</html>

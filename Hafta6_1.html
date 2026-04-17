@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Not Hesaplama</title>
+    <link rel="stylesheet" href="hafta6_1.css">
+</head>
+<body>
+    <header>
+        <!-- Not: index.html mevcut ana sayfanızı temsil eder -->
+        <a href="index.html" class="back-link">⬅ Ana Sayfaya Dön</a>
+    </header>
+
+    <div class="container">
+        <input type="text" id="adSoyad" placeholder="Ad Soyad" value="Filiz Akın">
+        <input type="number" id="vizeNotu" placeholder="Vize Notu" value="60">
+        <input type="number" id="finalNotu" placeholder="Final Notu" value="60">
+        <button onclick="hesapla()">Hesapla</button>
+
+        <div class="result-box" id="sonucAlani">
+            <h3 id="sonucAd"></h3>
+            <p id="sonucOrtalama"></p>
+            <p id="sonucHarf"></p>
+            <p id="sonucDurum"></p>
+        </div>
+    </div>
+
+    <script src="hafta6_1.js"></script>
+</body>
+</html>
