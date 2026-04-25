@@ -1,0 +1,20 @@
+/* Görsel düzenleme için minimal CSS. Ana görünüm Bootstrap üzerinden kurulmuştur. */
+html {
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Koyu temada buton renginin uyumlu olması için ufak bir fix */
+[data-bs-theme="dark"] #temaButonu {
+    color: #fff;
+    border-color: #fff;
+}
+
+[data-bs-theme="dark"] #temaButonu:hover {
+    background-color: #fff;
+    color: #000;
+}
